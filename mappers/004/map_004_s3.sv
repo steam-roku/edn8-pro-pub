@@ -56,7 +56,7 @@ module map_004_s3(//Acclaim mmc3 modification. Everything the same except irq
 	assign prg.oe 				= cpu.rw;
 	assign prg.we				= 0;
 	assign prg.addr[12:0]	= cpu.addr[12:0];
-	assign prg.addr[18:13]	= prg_addr[18:13];
+	assign prg.addr[20:13]	= prg_addr[20:13];
 	
 	assign chr.ce 				= mao.ciram_ce;
 	assign chr.oe 				= !ppu.oe;
@@ -77,7 +77,7 @@ module map_004_s3(//Acclaim mmc3 modification. Everything the same except irq
 	wire ram_ce_n;
 	wire ram_we_n;	
 	wire prg_ce_n;
-	wire [18:13]prg_addr;
+	wire [20:13]prg_addr;
 	wire [17:10]chr_addr;
 	
 	wire [7:0]sst_di_mmc;
