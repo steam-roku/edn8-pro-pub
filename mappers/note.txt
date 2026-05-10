@@ -1,9 +1,0 @@
-000 official. most important
-001 official. weird jp games mostly
-004 mmc-x mappers
-005 mmc5
-021 konami vrc-x (vrc6 snd inclided)
-
-255 system mapper for everdrive menu
-
-
